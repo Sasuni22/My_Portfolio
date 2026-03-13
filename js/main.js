@@ -1,15 +1,9 @@
-/* ===================================================================
- * Hudson 1.0.0 - Main JS
- *
- * ------------------------------------------------------------------- */
+
 
 (function(html) {
 
     'use strict';
 
-
-   /* preloader
-    * -------------------------------------------------- */
     const ssPreloader = function() {
 
         const siteBody = document.querySelector('body');
@@ -75,8 +69,6 @@
     }; // end ssMoveHeader
 
 
-   /* mobile menu
-    * ---------------------------------------------------- */ 
     const ssMobileMenu = function() {
 
         const toggleButton = document.querySelector('.s-header__menu-toggle');
@@ -115,8 +107,6 @@
     }; // end ssMobileMenu
 
 
-   /* highlight active menu link on pagescroll
-    * ------------------------------------------------------ */
     const ssScrollSpy = function() {
 
         const sections = document.querySelectorAll('.target-section');
@@ -186,7 +176,7 @@
                 clickable: true,
             },
             breakpoints: {
-                // when window width is > 400px
+                
                 401: {
                     slidesPerView: 1,
                     spaceBetween: 20
@@ -207,8 +197,7 @@
     }; // end ssSwiper
 
 
-   /* alert boxes
-    * ------------------------------------------------------ */
+ 
     const ssAlertBoxes = function() {
 
         const boxes = document.querySelectorAll('.alert-box');
@@ -250,11 +239,7 @@
             }
         });
 
-    }; // end ssBackToTop
-
-
-   /* smoothscroll
-    * ------------------------------------------------------ */
+    }; 
     const ssMoveTo = function() {
 
         const easeFunctions = {
@@ -293,11 +278,7 @@
             moveTo.registerTrigger(trigger);
         });
 
-    }; // end ssMoveTo
-
-
-   /* Initialize
-    * ------------------------------------------------------ */
+    }; 
     (function ssInit() {
 
         ssPreloader();
